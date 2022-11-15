@@ -1,0 +1,64 @@
+%Set variables
+%You can add sections, texts, explanations just by copying the style below. Replace the dummy texts "\lipsum[1][x-x]\par" with actual texts.
+%Create header
+\headerview
+\vspace{1ex}
+%Sections
+%Education
+\section{Ausbildung} 
+    \datedexperience{Universität Wien}{2020-heute} 
+    \explanation{Master of Science Wirtschaftsinformatik} 
+     \explanationdetail{\coloredbullet\ % 
+     Abschluss vorraussichtlich August 2023
+     }
+    \datedexperience{Goethe Universität Frankfurt am Main}{2014-2018} 
+    \explanation{Bachelor of Science Wirtschaftswissenschaften} 
+    \explanationdetail{\coloredbullet\ %
+     Thesis: Investitions- und Entnahmestrategien im Ruhestand
+     }
+%
+% Experience
+\section{Erfahrung}
+    %
+    \datedexperience{Erste Digital GmbH}{Jan 2021-heute} 
+    \explanation{Praktikum Software Engineering} 
+    %
+    \datedexperience{Erste Group Services GmbH}{Jan 2021 - Dez 2021} 
+    \explanation{Praktikum Statutory Reporting} 
+    %
+    \datedexperience{Advace Group GmbH}{Mai 2019 - Nov 2019} 
+    \explanation{Praktikum Investment Management} 
+    %
+    \datedexperience{Deutsche Lufthansa AG}{Okt 2018 - Mai 2019} 
+    \explanation{Praktikum Revenue Management} 
+    
+%
+% Skills
+\section{Skills}
+    %
+    \newcommand{\skillone}{\createskill{Sprachen}{\textbf{\emph{Fließend:}} \ \  Java \cpshalf Typescript \cpshalf Python \cpshalf Englisch }}
+    %
+    \newcommand{\skillonetest}{\createskill{}{\textbf{\emph{Konversationssicher:}} \ \  Rust \cpshalf GraphQL \cpshalf SQL \cpshalf REST }}
+    %
+    \newcommand{\skilltwo}{\createskill{Software Development}{Git \cpshalf Jira \cpshalf Agiles Arbeiten \cpshalf DevOps}}
+    %
+    \newcommand{\skillthree}{\createskill{Frameworks \ \& \ Libraries}{Angular \cpshalf Spring Boot \cpshalf Rocket (Rust crate) }}
+    %
+    %
+    \createskills{\skillone, \skillonetest, \skilltwo, \skillthree}
+%
+% Experience
+\section{Extra}
+    \newcommand{\extraone}{%
+    Kann erkennen, wann Software Muster benutzt müssen, weiß sie aber nicht alle auswendig.
+    }
+    %
+    \newcommand{\extratwo}{%
+    Habe keine Hemmungen davor, Dokumentation zu schreiben :) oder zu lesen.
+    }
+    %
+    \newcommand{\listofextras}{\extraone, \extratwo}
+    %
+    \createbullets{\listofextras}
+%
+%Footnote
